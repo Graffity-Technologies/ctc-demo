@@ -99,15 +99,39 @@ class _ARScreenState extends State<ARScreen> {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    const Padding(padding: EdgeInsets.only(top: 6)),
-                    const Text(
-                      "Warning that this record will be refreshed every day.",
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                      ),
+                    const Padding(padding: EdgeInsets.only(top: 12)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text(
+                              "Total 5/10",
+                              style: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.w500),
+                            ),
+                            Text(
+                              "Warning that this record \nwill be refreshed every day.",
+                              maxLines: 2,
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
+                        ElevatedButton.icon(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.swap_horiz_rounded,
+                            size: 16.0,
+                          ),
+                          label: const Text('Redeem'), // <-- Text
+                        ),
+                      ],
                     ),
-                    const Padding(padding: EdgeInsets.only(top: 24)),
+                    const Padding(padding: EdgeInsets.only(top: 16)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: List.generate(
@@ -117,7 +141,7 @@ class _ARScreenState extends State<ARScreen> {
                         },
                       ),
                     ),
-                    const Padding(padding: EdgeInsets.only(top: 8)),
+                    const Padding(padding: EdgeInsets.only(top: 12)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: List.generate(
