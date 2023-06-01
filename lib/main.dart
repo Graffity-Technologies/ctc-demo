@@ -1,6 +1,8 @@
 import 'package:ctc_ar_demo/ar/qrscanScreen.dart';
 import 'package:flutter/material.dart';
 
+import 'ar/arScreen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -32,6 +34,13 @@ class _MyHomePageState extends State<MyHomePage> {
   void _incrementCounter() {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => const QRScanScreen()));
+    // Navigator.push(
+    //     context,
+    //     MaterialPageRoute(
+    //       builder: (context) => ARScreen(
+    //         qrcodeId: "CCEACB74",
+    //       ),
+    //     ));
   }
 
   @override
