@@ -3,12 +3,9 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/foundation.dart';
 
-const host = kDebugMode
-    ? 'https://753c-2405-9800-bc10-9d79-4cb-92a6-d279-e37e.ngrok-free.app/api/v1/ctc' // 'https://staging-console-backend.graffity.tech/api/v1/ctc'
-    : 'https://console-backend.graffity.tech/api/v1/ctc';
+const host = 'https://console-backend.graffity.tech/api/v1/ctc';
 
-const key =
-    'YTA4Yjc4NWUtMjgxYi00ZTRmLWFlNjAtNTQ5NmJjZmVlNjdmLTUxNWUxMDE3LWYzNDktNDdlMi05MjBhLTMzODBlMTNhNGQ5YQ==';
+const key = 'API_KEY';
 
 class CtcUser {
   String qrId;
